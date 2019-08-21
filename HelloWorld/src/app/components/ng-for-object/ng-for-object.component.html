@@ -1,0 +1,27 @@
+<div *ngIf="isshowForm">
+<input [(ngModel)]="addarren" placeholder="en" > <br>
+<input [(ngModel)]="addarrvn" placeholder="vn" > <br>
+<input [(ngModel)]="abc" placeholder="vn" >
+<h2>{{abc}}</h2>
+<br><br>
+<button class="primary badge-light" (click)="addWord()">Them</button>
+</div>
+<button class="primary badge-light" (click)="isshowForm = !isshowForm" *ngIf="!isshowForm">Hien Them</button>
+<br><br>
+<select class="custom-select mr-sm-2" id="inlineFormCustomSelect"
+        [(ngModel)]="filterStatus"
+>
+    <option value="XemTatCa">Xem tất cả</option>
+    <option value="XemDaNho">Xem đã nhớ</option>
+    <option value="XemChuaNho">Xem chưa nhớ</option>
+  
+  </select>
+<div *ngFor="let word of arrWords">
+    <div *ngIf="showFilterStatus(word.memorized)"  class="word">
+        <h4 [ngStyle]="{ color: word.memorized  ? 'red' : 'green'}">{{word.en}}</h4>
+        <h6>{{word.id + " "+word.vn}}</h6>
+        <button (click)="removeWord(word.id)">Xóa</button>
+        <button (click)="word.memorized = !word.memorized">{{word.memorized ? 'Nhớ' : 'Chưa nhớ'}}</button>
+
+    </div>
+</div>

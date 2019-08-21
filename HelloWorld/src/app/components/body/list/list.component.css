@@ -1,0 +1,51 @@
+.list-s1{
+    padding-top: 40px;
+}
+    /*  title */
+.list-s1 .title{
+    text-align: center;
+
+}
+
+.list-s1 .title h3{
+    font-family: 'Dancing Script', cursive;
+}
+.list-s1 .title h4{
+    font-weight: bolder;
+    font-size: 40px;
+}
+    /* title */
+
+.list-s1IMG img{
+    width: 100%; 
+    transition: all .5s ease-in-out;
+}
+
+
+.list-s1IMG img:hover{
+    transform: scale(1.2); 
+    opacity: 0.6;
+    border-radius: 4%;
+}
+
+
+.list-1Info{
+    background-color: #f8f8f8;
+    margin-bottom:  30px;
+    
+}
+
+.list-1Info p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 300px;
+                                                        
+}
+.list-1Info .foodName{
+    text-align: center;                                   
+}
+
+/* list-s1 */
+
+

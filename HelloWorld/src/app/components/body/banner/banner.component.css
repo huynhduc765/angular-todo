@@ -1,0 +1,32 @@
+
+/*_______ section bg top */
+.background-top{
+    background-image: url('/assets/images/topbg.jpg');
+    height: 500px;
+    width: 100%;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    text-align: center;
+    position: relative;
+    color: antiquewhite;
+    opacity: 0.9;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.banner{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    
+}   
+.banner span{
+    font-family: 'Dancing Script', cursive;
+}
+.banner img{
+    position: relative;
+    margin-top:5px;
+}
+/* section bg top */
